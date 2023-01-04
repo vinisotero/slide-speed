@@ -73,7 +73,7 @@ function InicialPage() {
         <button className = "classicButton" onClick={skip}>Skip Tutorial</button>
       </>
     ):(
-      <><p id = 'error-mesage'>Your device is too small! Use a tablet to use it!</p></>
+      <><p id = 'error-mesage'>Your device is too small! Use a tablet to use this website!</p></>
     )}
     </>
     

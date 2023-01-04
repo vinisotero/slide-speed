@@ -45,7 +45,7 @@ function UserInfos() {
       </>
 
     ): (
-      <><p id = 'error-mesage'>Your device is too small! Use a tablet to use it!</p></>
+      <><p id = 'error-mesage'>Your device is too small! Use a tablet to use this website!</p></>
     )}
     </>
   );
