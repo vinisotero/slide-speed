@@ -157,3 +157,7 @@ input{
   margin-top: auto;
   margin-bottom: auto;
 }
+
+#icon-error{
+  width: 15%;
+}

@@ -1,5 +1,6 @@
 import '../App.css'
 import {useNavigate} from 'react-router-dom'
+import icon from '../imgs/icon-erro.png'
 
 function InicialPage() {
 
@@ -73,7 +74,10 @@ function InicialPage() {
         <button className = "classicButton" onClick={skip}>Skip Tutorial</button>
       </>
     ):(
-      <><p id = 'error-mesage'>Your device is too small! Use a tablet to use this website!</p></>
+      <>
+        <p id = 'error-mesage'>Your device is too small! Use a tablet to use this website!</p>
+        <img src={icon} alt="Icon Error" id = "icon-error"></img>
+      </>
     )}
     </>
     

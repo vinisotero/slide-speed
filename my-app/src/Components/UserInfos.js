@@ -1,15 +1,25 @@
 import '../App.css'
 import { useNavigate } from 'react-router-dom';
 
+let user = {username: '', lastname: '', country: '', email: ''}
+
 function UserInfos() {
 
   const width = window.screen.availWidth;
   const height = window.screen.availHeight;
-
   const navigate = useNavigate();
   const back = (e) => {
     e.preventDefault();
     navigate('/');
+  }
+
+  const start = (e) => {
+    e.preventDefault();
+    user.username = document.getElementById('username').value
+    user.lastname = document.getElementById('lastname').value
+    user.country = document.getElementById('country').value
+    user.email = document.getElementById('email').value
+    navigate('/mainPage');
   }
 
   return (
@@ -38,7 +48,7 @@ function UserInfos() {
             <input id = "email" type = "email"></input>
             <br></br>
             <button className = "classicButton" onClick = {back}>Back</button>
-            <button id = "start-button" className = "classicButton" >Start</button>
+            <button id = "start-button" className = "classicButton" onClick={start} >Start</button>
           </form>
         </div>
       </div>
@@ -51,4 +61,5 @@ function UserInfos() {
   );
 }
 
+export const userInfo = user;
 export default UserInfos;
