@@ -1,6 +1,9 @@
 .App {
   text-align: center;
   height: 100vh;
+  background: url('./imgs/background.jpeg') no-repeat 0 0;
+  background-position: 50% 50%;
+  background-size: cover;
 } 
 * {
   margin: 0;
@@ -56,7 +59,6 @@ h1 {
   right: 0;
   left: auto;
   text-align: right;
-  background: linear-gradient(to right, transparent 0%, black 200%);
 }
 
 .gallery {
@@ -160,4 +162,67 @@ input{
 
 #icon-error{
   width: 15%;
+}
+
+
+/*Abaixo está o css da página de cálculo de velocidade*/
+
+
+* {
+  font-family: "proxima-nova",sans-serif;
+  box-sizing: border-box;
+  font-size: 28px * 1.7;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+.target {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 5px solid grey;
+  background-color: white;
+}
+
+.target {
+    text-align:center;
+}
+
+.target:before {
+    content: '';
+    height: 100%;
+}
+
+.info-wrapper {
+    display: inline-block;
+    width: 100%;
+}
+
+.info .label:after {
+  content: ': ';
+}
+
+#begin-point{
+  height: 20px;
+  width: 20px;
+  background-color: blue; 
+  display: inline-block;
+  margin-top: 35%;
+}
+
+#path{
+  height: 5px;
+  width: 556.93px;
+  background-color: black;
+  display: inline-block;
+}
+
+#end-point{
+  height: 20px;
+  width: 20px;
+  background-color: blue; 
+  display: inline-block;
 }

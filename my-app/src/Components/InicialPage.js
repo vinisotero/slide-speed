@@ -54,7 +54,7 @@ function InicialPage() {
 
   return (
     
-    <>
+    <div id = "inicialPage">
     {width >= 700 && height >= 500 ? (
       <>
         <h1 className = "title">Tutorial</h1>
@@ -79,7 +79,7 @@ function InicialPage() {
         <img src={icon} alt="Icon Error" id = "icon-error"></img>
       </>
     )}
-    </>
+    </div>
     
   );
 }
